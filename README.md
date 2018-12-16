@@ -9,16 +9,14 @@ chdir 上に学籍番号，パスワード，認証マトリックスを入力�
 
 
 例）
-12M34567
-
-pass
-
-abcdefghij
-abcdefghij
-abcdefghij
-abcdefghij
-abcdefghij
-abcdefghij
+12M34567  
+pass  
+abcdefghij  
+abcdefghij  
+abcdefghij  
+abcdefghij  
+abcdefghij  
+abcdefghij  
 abcdefghij
 
 
