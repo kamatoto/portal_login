@@ -1,11 +1,11 @@
 # portal_login
 東工大ポータルへのログイン
 
-実行環境は
-windows 7
-python 3.6.4
-numpy 1.14.0
-selenium 3.12.0
+実行環境は  
+windows 7  
+python 3.6.4  
+numpy 1.14.0  
+selenium 3.12.0  
 
 
 google chromeのwebdriverを使用することで東工大ポータルにログインできるようになります．あらかじめwebdriverの有効化が必要です．
@@ -33,7 +33,7 @@ selenium とchromedriverのインストールはここを参考にしてくだ�
 https://qiita.com/memakura/items/20a02161fa7e18d8a693
 これを読むのが面倒な人は
 
-pip install selenium
+pip install selenium  
 pip install chromedriver-binary
 
 を試してください．
