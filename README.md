@@ -2,6 +2,7 @@
 東工大ポータルへのログイン
 
 
+
 google chromeのwebdriverを使用することで東工大ポータルにログインできるようになります．あらかじめwebdriverの有効化が必要です．
 
 chdir 上に学籍番号，パスワード，認証マトリックスを入力した.csvファイルをあらかじめ作成してください．
@@ -20,6 +21,17 @@ abcdefghij
 abcdefghij
 
 
-.csvファイルは"YOUR_FILE_POSITION"においてください.
+.csvファイル場所を"YOUR_FILE_POSITION"で宣言してください．
+
+
+selenium とchromedriverのインストールはここを参考にしてください．
+https://qiita.com/memakura/items/20a02161fa7e18d8a693
+これを読むのが面倒な人は
+
+pip install selenium
+pip install chromedriver-binary
+
+を試してください．
+
 
 
