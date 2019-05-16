@@ -20,5 +20,6 @@ abcdefghij
 abcdefghij
 
 
+.csvファイルは"YOUR_FILE_POSITION"においてください.
 
 
