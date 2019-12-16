@@ -6,8 +6,9 @@
 import os
 from selenium import webdriver
 import numpy as np
+import chromedriver_binary
 
-chdir=r"YOUR_FILE_POSITION"
+chdir=r"C:\Users\soishi\Desktop"
 os.chdir(chdir)
 data=np.genfromtxt("password.csv",delimiter=",",dtype="str")
 
@@ -37,19 +38,21 @@ if __name__ == '__main__':
     pass_p=np.zeros(6)
     pass_p2=np.zeros(6)
     ask_matrix=np.zeros((3,2))
-    for i in range(6):
+    for i in range(5):
         pass_p[i]=html.find(explore)
-        if i>2:
+        if i > 1:
             colmun=(html[int(pass_p[i])+36])
             row=(html[int(pass_p[i])+38])
             print(colmun,row)
-            ask_matrix[i-3,0]=("ABCDEFGHIJ").find(colmun)
-            ask_matrix[i-3,1]=int(row)-1
+            ask_matrix[i-2,0]=("ABCDEFGHIJ").find(colmun)
+            ask_matrix[i-2,1]=int(row)-1
         html=html[int(pass_p[i])+1:]
         
+    print("ask", ask_matrix)
     def send_pass(name,num):
         pass1 = browser.find_element_by_name(name)
-        mat1,mat2=int(ask_matrix[num,0]),int(ask_matrix[num,1])
+        mat1, mat2=int(ask_matrix[num,0]),int(ask_matrix[num,1])
+        print(mat1, mat2)
         point=matrix[mat2][mat1]
         pass1.send_keys(point)
         print(point)
